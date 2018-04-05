@@ -7,7 +7,6 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 -- -----------------------------------------------------
 -- Schema Truxit
 -- -----------------------------------------------------
-DROP SCHEMA IF EXISTS `Truxit` ;
 
 -- -----------------------------------------------------
 -- Schema Truxit
@@ -25,6 +24,8 @@ CREATE TABLE IF NOT EXISTS `Truxit`.`Person` (
   `Address` VARCHAR(100) NULL,
   `FirstName` VARCHAR(45) NULL,
   `LastName` VARCHAR(45) NULL,
+  `Email` VARCHAR(45) NULL,
+  `Phone` VARCHAR(45) NULL,
   PRIMARY KEY (`PersonId`))
 ENGINE = InnoDB;
 
